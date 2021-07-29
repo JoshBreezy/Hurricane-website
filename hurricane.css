@@ -1,0 +1,134 @@
+html {
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+}
+
+a.navlink {
+    box-sizing: border-box;
+    color: rgb(255, 78, 202);
+    background-image: linear-gradient(rgba(0, 132, 255,.3), rgba(0,132,255,.6));
+    font-family: brothers, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    padding: .5vw;
+    margin: 3px;
+    border-radius: 13px;
+}
+
+a.navlink:hover {
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+.logo {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+
+}
+
+#logo {
+    width: 50%;
+    max-width: 700px;
+    flex-shrink: 1;
+    filter: none;
+}
+
+#picsgrid {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+    flex-shrink: 1;
+}
+
+img {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 5px;
+    filter: grayscale(100%);
+}
+
+img:hover {
+    filter: none;
+}
+
+.dude:hover {
+    transform: translateY(10px);
+}
+
+.tooltip {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+    flex-shrink: 1;
+}
+
+.tooltiptext {
+    z-index: 2;
+    position: absolute;
+    width: 80%;
+    top: 80%;
+    visibility: hidden;
+    font-family: brothers, sans-serif;
+    text-align: center;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    color: white;
+    background: black;
+    text-decoration: none;
+    font-size: large;
+    padding: .5vw;
+    margin: 3px;
+    border-radius: 13px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #picsgrid {
+        flex-direction: column;
+        height: auto;
+    }    
+
+    a.navlink {
+        font-size: large;
+
+    }
+
+    .tooltip {
+        width: 80vw;
+        height: auto;
+    }
+
+    .dude {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    a.navlink {
+        font-size: medium;
+    }
+}
