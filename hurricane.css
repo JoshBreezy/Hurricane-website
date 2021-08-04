@@ -173,6 +173,7 @@ img:hover {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 iframe {
