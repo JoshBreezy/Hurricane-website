@@ -166,6 +166,14 @@ img:hover {
 
 @media only screen and (max-width: 600px) {
 
+    html {
+        width: 100%;
+    }
+
+    #logo {
+        width: 75%;
+    }
+
     #picsgrid {
         display: none;
     }
