@@ -1,33 +1,46 @@
 html {
     background-color: black;
+    min-width: 480px;
 }
 
 nav {
     display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
     box-sizing: border-box;
     justify-content: flex-end;
     align-items: center;
-    height: 10vh;
+    height: 10vh
+}
+
+.navlinkcontainer {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+#left {
+    flex-shrink: 1;
+}
+
+#right {
+    flex-shrink: 3;
 }
 
 a.navlink {
     box-sizing: border-box;
     color: rgb(255, 78, 202);
     background-image: linear-gradient(rgba(0, 132, 255,.3), rgba(0,132,255,.6));
-    font-family: brothers, sans-serif;
-    text-decoration: none;
-    text-align: center;
-    font-size: x-large;
     padding: .5vw;
     margin: 3px;
     border-radius: 13px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 a.navlink:hover {
-    transform: translateY(10px);
+    transform: translateY(6px);
     transition: all 0.3s ease-in-out;
 }
 
@@ -48,6 +61,41 @@ a.navlink:hover {
     filter: none;
 }
 
+.containter {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#biocont1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.bio {
+    color:rgb(255, 78, 202);
+    font-family: brothers;
+    text-align: left;
+    margin: 5%;
+    font-size: 18px;
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.bio::-webkit-scrollbar {
+    display: none;
+}
+
+.h1 {
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+    color:rgb(255, 78, 202);
+    font-family: brothers;
+    text-align: center;
+    font-size: 30px;
+}
+
 #picsgrid {
     box-sizing: border-box;
     display: flex;
@@ -55,6 +103,16 @@ a.navlink:hover {
     align-items: center;
     height: 30vw;
     flex-shrink: 1;
+    margin-bottom: 30px;
+}
+
+#groupshot {
+    box-sizing: border-box;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    margin-bottom: 30px;
 }
 
 img {
@@ -70,6 +128,7 @@ img:hover {
 
 .dude:hover {
     transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
 }
 
 .tooltip {
@@ -106,14 +165,29 @@ img:hover {
 
 
 @media only screen and (max-width: 600px) {
+
     #picsgrid {
-        flex-direction: column;
-        height: auto;
-    }    
+        display: none;
+    }
+
+    #groupshot {
+        display: flex;
+        width: 100%;
+        filter: none;
+    }
+
+    #theboys {
+        width: 100%;
+    }
 
     a.navlink {
         font-size: large;
 
+    }
+
+    img {
+        width: 100%;
+        filter: none;
     }
 
     .tooltip {
@@ -123,12 +197,5 @@ img:hover {
 
     .dude {
         width: 100%;
-    }
-}
-
-
-@media only screen and (max-width: 400px) {
-    a.navlink {
-        font-size: medium;
     }
 }
