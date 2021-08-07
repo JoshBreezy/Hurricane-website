@@ -1,8 +1,5 @@
 html {
     background-color: black;
-    width: auto;
-    min-width: 480px;
-    display: flex;
 }
 
 nav {
