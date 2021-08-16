@@ -36,6 +36,7 @@ a.navlink {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 a.navlink:hover {
@@ -75,7 +76,8 @@ a.navlink:hover {
     color:rgb(255, 78, 202);
     font-family: brothers;
     text-align: left;
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 18px;
     height: 50vh;
     overflow-y: scroll;
@@ -85,14 +87,16 @@ a.navlink:hover {
     display: none;
 }
 
-.h1 {
+h1 {
     display:flex;
     justify-content: center;
-    margin-top: 15px;
-    color:rgb(255, 78, 202);
+    background: -webkit-linear-gradient(rgb(0, 124, 155), rgb(0, 78, 151));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: brothers;
     text-align: center;
-    font-size: 30px;
+    margin: 5%;
+    font-size: 65px;
 }
 
 #picsgrid {
