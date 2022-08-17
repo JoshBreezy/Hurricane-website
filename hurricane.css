@@ -42,6 +42,7 @@ a.navlink {
 a.navlink:hover {
     transform: translateY(6px);
     transition: all 0.3s ease-in-out;
+    background-color: rgb(255, 78, 202);
 }
 
 .logo {
